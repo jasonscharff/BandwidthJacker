@@ -42,6 +42,14 @@ static NSString * const kBWJMultipeerConnectivityServiceType = @"bwj-mpc-service
     return _sharedInstance;
 }
 
+- (instancetype)init {
+    self = [super init];
+    if(self) {
+        self.sessions = [NSMutableDictionary dictionary];
+    }
+    return self;
+}
+
 - (void)dealloc {
     [self.serviceIdentifier stopAdvertisingPeer];
 }
@@ -80,6 +88,7 @@ didReceiveInvitationFromPeer:(MCPeerID *)peerID
         //We don't know the server UUID here so we'll use our own.
         //Only the mac app actually interfaces with the server.
         session.sessionID = [[NSUUID UUID]UUIDString];
+        self.masterPeer = peerID;
         
         session.delegate = self;
         
