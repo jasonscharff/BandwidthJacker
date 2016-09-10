@@ -14,6 +14,8 @@
 		BE300BA31D8391F3004275A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE300BA21D8391F3004275A9 /* Assets.xcassets */; };
 		BE300BAE1D839249004275A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE300BAD1D839249004275A9 /* LaunchScreen.storyboard */; };
 		BE300BB11D839646004275A9 /* BWJMultipeerConnectivityController.m in Sources */ = {isa = PBXBuildFile; fileRef = BE300BB01D839646004275A9 /* BWJMultipeerConnectivityController.m */; };
+		BE8E8BFE1D83E91600E65C82 /* BWJHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8BFD1D83E91600E65C82 /* BWJHTTPSessionManager.m */; };
+		BE8E8C011D83EC1100E65C82 /* MCSession+SessionIdentifier.m in Sources */ = {isa = PBXBuildFile; fileRef = BE8E8C001D83EC1100E65C82 /* MCSession+SessionIdentifier.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		BE300BAD1D839249004275A9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BE300BAF1D839646004275A9 /* BWJMultipeerConnectivityController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWJMultipeerConnectivityController.h; sourceTree = "<group>"; };
 		BE300BB01D839646004275A9 /* BWJMultipeerConnectivityController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWJMultipeerConnectivityController.m; sourceTree = "<group>"; };
+		BE8E8BFC1D83E91600E65C82 /* BWJHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BWJHTTPSessionManager.h; sourceTree = "<group>"; };
+		BE8E8BFD1D83E91600E65C82 /* BWJHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BWJHTTPSessionManager.m; sourceTree = "<group>"; };
+		BE8E8BFF1D83EC1100E65C82 /* MCSession+SessionIdentifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MCSession+SessionIdentifier.h"; sourceTree = "<group>"; };
+		BE8E8C001D83EC1100E65C82 /* MCSession+SessionIdentifier.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MCSession+SessionIdentifier.m"; sourceTree = "<group>"; };
 		E6DB5C12AE17BE7E8DECA76C /* Pods-BandwithJacker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BandwithJacker.release.xcconfig"; path = "Pods/Target Support Files/Pods-BandwithJacker/Pods-BandwithJacker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -74,6 +80,7 @@
 		BE300B951D8391F3004275A9 /* BandwithJacker */ = {
 			isa = PBXGroup;
 			children = (
+				BE8E8C021D83EC1500E65C82 /* Objects */,
 				BE300B991D8391F3004275A9 /* AppDelegate.h */,
 				BE300B9A1D8391F3004275A9 /* AppDelegate.m */,
 				BE300BB21D83964A004275A9 /* Data Management */,
@@ -97,6 +104,8 @@
 		BE300BB21D83964A004275A9 /* Data Management */ = {
 			isa = PBXGroup;
 			children = (
+				BE8E8BFC1D83E91600E65C82 /* BWJHTTPSessionManager.h */,
+				BE8E8BFD1D83E91600E65C82 /* BWJHTTPSessionManager.m */,
 				BE300BAF1D839646004275A9 /* BWJMultipeerConnectivityController.h */,
 				BE300BB01D839646004275A9 /* BWJMultipeerConnectivityController.m */,
 			);
@@ -110,6 +119,15 @@
 				BE300B9D1D8391F3004275A9 /* BWJMainViewController.m */,
 			);
 			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		BE8E8C021D83EC1500E65C82 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				BE8E8BFF1D83EC1100E65C82 /* MCSession+SessionIdentifier.h */,
+				BE8E8C001D83EC1100E65C82 /* MCSession+SessionIdentifier.m */,
+			);
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		EEDDBB66EA98403E245127BF /* Pods */ = {
@@ -243,9 +261,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BE8E8C011D83EC1100E65C82 /* MCSession+SessionIdentifier.m in Sources */,
 				BE300BB11D839646004275A9 /* BWJMultipeerConnectivityController.m in Sources */,
 				BE300B9E1D8391F3004275A9 /* BWJMainViewController.m in Sources */,
 				BE300B9B1D8391F3004275A9 /* AppDelegate.m in Sources */,
+				BE8E8BFE1D83E91600E65C82 /* BWJHTTPSessionManager.m in Sources */,
 				BE300B981D8391F3004275A9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
